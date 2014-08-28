@@ -19,6 +19,7 @@
     "grunt-usemin": "~2.3",
     "jshint-stylish": "~0.4",
     "load-grunt-tasks": "~0.6",
+    "node-sass": "~0.9",
     "time-grunt": "~0.4"
   },
   "devDependencies": {},
