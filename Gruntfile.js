@@ -141,9 +141,9 @@ module.exports = function (grunt) {
      */
      sass: {
       options: {
-        includePaths: [
-          'app/bower_components/normalize-scss/'
-        ],
+        // includePaths: [
+        //   'app/bower_components/normalize-scss/'
+        // ],
         outputStyle: 'compressed', // 'nested' (default), 'compressed'
         sourceMap: true
       },
