@@ -24,10 +24,22 @@
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!-- build:js js/app.js -->
+    <div ng-app="app" class="app"></div>
+
+    <!-- build:js js/vendors.js -->
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-mocks/angular-mocks.js"></script>
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js js/app.js -->
+    <script src="js/angular/module.js"></script>
+    <script src="js/angular/config.js"></script>
+    <script src="js/angular/services/**/*.js"></script>
+    <script src="js/angular/filters/**/*.js"></script>
+    <script src="js/angular/factories/**/*.js"></script>
+    <script src="js/angular/directives/**/*.js"></script>
+    <script src="js/angular/controllers/**/*.js"></script>
     <!-- endbuild -->
 
 </body>
