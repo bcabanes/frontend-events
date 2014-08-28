@@ -262,7 +262,7 @@ module.exports = function (grunt) {
     jasmine: {
       app: {
         options: {
-          specs: 'app/tests/**/*.js',
+          specs: 'tests/**/*.js',
           template: require('grunt-template-jasmine-istanbul'),
           templateOptions: {
             coverage: 'coverage/data.json',
