@@ -1,0 +1,15 @@
+/**
+ * This is the main css file
+ * Import all dependencies here
+ */
+
+/**
+ * Normalize
+ * Path imported by the gruntfile
+ */
+@import '_normalize';
+
+/**
+ * Import: custom theme | Luctube
+ */
+@import '_myProject';

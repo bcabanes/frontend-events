@@ -1,0 +1,65 @@
+/* ==========================================================================
+   Mixins
+   ========================================================================== */
+
+/**
+ * Align horizontaly and verticaly something
+ */
+@mixin align-hv() {
+  margin: auto;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+
+
+@function em($px, $base: $baseFontSize) {
+    @return ($px / $base) + 0em;
+}
+
+@function clamp($value, $min, $max) {
+    @return if($value > $max, $max,
+        if($value < $min, $min, $value));
+}
+
+@mixin opacity($value) {
+    opacity: $value;
+    filter: alpha(opacity=$value * 100);
+}
+
+@mixin breakSmall {
+    @media (min-width: $minSmall) {
+        @content;
+    }
+}
+
+@mixin breakMedium {
+    @media (min-width: $minMedium) {
+        @content;
+    }
+}
+
+@mixin breakLarge {
+    @media (min-width: $minLarge) {
+        @content;
+    }
+}
+
+@mixin xbrowser($property, $value...) {
+    -webkit-#{$property}: $value;
+    -moz-#{$property}: $value;
+    -ms-#{$property}: $value;
+    -o-#{$property}: $value;
+    #{$property}: $value;
+}
+
+@mixin xbrowserV($property, $value...) {
+    #{$property}: -webkit-#{$value};
+    #{$property}: -moz-#{$value};
+    #{$property}: -ms-#{$value};
+    #{$property}: -o-#{$value};
+    #{$property}: #{$value};
+}
