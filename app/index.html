@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- endbuild -->
 
-    <!-- build:js js/vendors/modernizr.js -->
-    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- build:js /js/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
 
   </head>
@@ -24,22 +24,41 @@
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div ng-app="app" class="app"></div>
+    <div class="app" ng-app="app">
 
-    <!-- build:js js/vendors.js -->
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-mocks/angular-mocks.js"></script>
-    <script src="bower_components/jquery/dist/jquery.js"></script>
+      <div class="todos-container" ng-controller="TodosController">
+        <h1>
+          Todos
+          <small ng-if="remaining()">({{ remaining() }} remaining)</small>
+        </h1>
+
+        <input type="text" placeholder="Filter todos" ng-model="search">
+
+        <ul>
+          <li ng-repeat="todo in todos | filter:search">
+            <input type="checkbox" ng-model="todo.completed">
+            {{ todo.body }}
+          </li>
+        </ul>
+
+        <form ng-submit="addTodo()">
+          <input type="text" placeholder="Add new task" ng-model="newTodoBody">
+          <button type="submit">Add task</button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- build:js /js/vendors.js -->
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-mocks/angular-mocks.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
     <!-- endbuild -->
 
-    <!-- build:js js/app.js -->
-    <script src="js/angular/module.js"></script>
-    <script src="js/angular/config.js"></script>
-    <script src="js/angular/services/**/*.js"></script>
-    <script src="js/angular/filters/**/*.js"></script>
-    <script src="js/angular/factories/**/*.js"></script>
-    <script src="js/angular/directives/**/*.js"></script>
-    <script src="js/angular/controllers/**/*.js"></script>
+    <!-- build:js /js/app.js -->
+    <script src="/js/angular/module.js"></script>
+    <script src="/js/angular/config.js"></script>
+    <script src="/js/angular/controllers/todos.js"></script>
     <!-- endbuild -->
 
 </body>
