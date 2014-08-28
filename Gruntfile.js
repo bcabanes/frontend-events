@@ -49,6 +49,7 @@ module.exports = function (grunt) {
    * Define the configuration for all the tasks
    */
   grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
 
     /**
      * Watces files for changes and runs tasks based on the changed files
@@ -183,7 +184,31 @@ module.exports = function (grunt) {
       html: ['dist/**/*.html'],
       css: ['dist/css/**/*.css'],
       options: {
-        dirs: ['dist']
+        dirs: 'dist'
+      }
+    },
+
+    /**
+     * Concat (use by usemin/useminPrepare)
+     * @type {Object}
+     */
+    concat: {
+      options: {
+        separator: ';',
+        sourceMap: false,
+        sourceMapName: undefined,
+        sourceMapStyle: 'embed'
+      }
+    },
+
+    /**
+     * UglifyJS (use by usemin/useminPrepare)
+     * @type {Object}
+     */
+    uglify: {
+      options: {
+        beautify: false,
+        mangle: true
       }
     },
 
@@ -246,8 +271,7 @@ module.exports = function (grunt) {
           vendor: [
             'app/bower_components/jquery/dist/jquery.js',
             'app/bower_components/angular/angular.js',
-            'app/bower_components/angular-mocks/angular-mocks.js',
-            'app/bower_components/bootstrap/dist/js/bootstrap.js'
+            'app/bower_components/angular-mocks/angular-mocks.js'
           ]
         },
         src: 'app/js/angular/**/*.js'
@@ -284,6 +308,8 @@ module.exports = function (grunt) {
     'copy:dist',
     'useminPrepare',
     'usemin',
+    'concat',
+    'uglify',
     'smushit:dist',
     'clean:server'
   ]);

@@ -1,8 +1,7 @@
 /app/bower_components
-/.sass-cache/
-/coverage/
-/node_modules/
-/platforms/
+/dist
+/.sass-cache
+/coverage
+/node_modules
 /npm-debug.log
 .DS_Store
-Thumbs.db
