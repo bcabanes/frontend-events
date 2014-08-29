@@ -1,5 +1,5 @@
 {
-  "name": "falltravelbundle",
+  "name": "myProject",
   "version": "0.0.1",
   "dependencies": {
     "connect-livereload": "~0.3",
