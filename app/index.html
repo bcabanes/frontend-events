@@ -24,8 +24,13 @@
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+    <!-- ng-app: This directive declares an element as application's root element -->
     <div class="app" ng-app="app">
 
+      <!--
+        ng-controller: It is used to define a JavaScript controller
+        class to evaluate HTML expressions.
+       -->
       <div class="todos-container" ng-controller="TodosController">
         <div class="todos" ng-include src="view.getTemplate()"></div>
       </div>
