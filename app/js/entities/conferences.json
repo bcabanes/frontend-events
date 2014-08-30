@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "JSConf",
+    "website": "http://jsconf.com/",
+    "twitter": "@jsconf",
+    "localisation": "North American"
+  },
+  {
+    "id": 2,
+    "name": "jQuery Conference",
+    "website": "http://events.jquery.org/2014/chicago/",
+    "twitter": "@jqcon",
+    "localisation": "North American"
+  },
+  {
+    "id": 3,
+    "name": "Strange Loop Conf",
+    "website": "https://thestrangeloop.com/",
+    "twitter": "@jstrangeloop_stl",
+    "localisation": "North American"
+  }
+]
