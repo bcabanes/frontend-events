@@ -53,6 +53,7 @@ module.exports = function (grunt) {
 
     /**
      * Watch files for changes and runs tasks based on the changed files
+     * @type {Object}
      */
     watch: {
       options: {
@@ -87,6 +88,7 @@ module.exports = function (grunt) {
 
     /**
      * Grunt server settings
+     * @type {Object}
      */
     connect: {
       options: {
@@ -120,6 +122,7 @@ module.exports = function (grunt) {
 
     /**
      * Empties folders to start fresh
+     * @type {Object}
      */
      clean: {
        dist: {
@@ -138,6 +141,7 @@ module.exports = function (grunt) {
     /**
      * C LIBSASS
      * Compiles Sass to CSS and generates necessary files if requested
+     * @type {Object}
      */
      sass: {
       options: {
@@ -215,6 +219,7 @@ module.exports = function (grunt) {
      /**
      * Copies remaining files to places other tasks can use
      * dist: simple frontend distribution
+     * @type {Object}
      */
     copy: {
       dist: {
@@ -240,6 +245,7 @@ module.exports = function (grunt) {
     /**
      * jshint
      * Check the integrity design of code
+     * @type {Object}
      */
      jshint: {
       options: {
@@ -256,6 +262,7 @@ module.exports = function (grunt) {
     /**
      * Tests with Jasmine
      * Coverage with Istanbul
+     * @type {Object}
      */
     jasmine: {
       app: {
