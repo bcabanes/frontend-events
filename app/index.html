@@ -25,15 +25,12 @@
     <![endif]-->
 
     <!-- ng-app: This directive declares an element as application's root element -->
-    <div class="app" ng-app="app">
+    <div class="app" ng-app="frontendConfs" ng-controller="conferencesListController as conferences">
 
-      <!--
-        ng-controller: It is used to define a JavaScript controller
-        class to evaluate HTML expressions.
-       -->
-      <div class="todos-container" ng-controller="TodosController">
-        <div class="todos" ng-include src="view.getTemplate()"></div>
-      </div>
+      <input type="text" ng-model="conferenceFilter" placeholder="Search">
+      <ul>
+        <li ng-repeat="conference in conferencesList | filter:searchFilter">{{conference.name}}</li>
+      </ul>
 
     </div>
 
@@ -44,9 +41,12 @@
     <!-- endbuild -->
 
     <!-- build:js /js/app.js -->
-    <script src="/js/angular/app.js"></script>
     <script src="/js/angular/config.js"></script>
-    <script src="/js/angular/apps/todo/controllers/todos.js"></script>
+    <script src="/js/angular/app.js"></script>
+    <script src="/js/angular/routes.js"></script>
+    <script src="/js/angular/apps/conferences/app.js"></script>
+    <script src="/js/angular/apps/conferences/controllers/list.js"></script>
+    <script src="/js/angular/apps/conferences/factories/api.js"></script>
     <!-- endbuild -->
 
 </body>
