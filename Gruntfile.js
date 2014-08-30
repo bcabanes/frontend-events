@@ -52,7 +52,7 @@ module.exports = function (grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     /**
-     * Watces files for changes and runs tasks based on the changed files
+     * Watch files for changes and runs tasks based on the changed files
      */
     watch: {
       options: {
@@ -215,8 +215,6 @@ module.exports = function (grunt) {
      /**
      * Copies remaining files to places other tasks can use
      * dist: simple frontend distribution
-     * laravel: dispach all nessecary files in their right location
-     * 					into the laravel folder
      */
     copy: {
       dist: {
@@ -282,7 +280,7 @@ module.exports = function (grunt) {
   });// END grunt.initConfig
 
   /**
-   * SERVE TASK
+   * SERVER TASK
    * Initializing the watch, copying styles and start compass.
    * Lunch the local server and open the app in the browser.
    */
