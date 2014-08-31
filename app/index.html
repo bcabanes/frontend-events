@@ -46,7 +46,7 @@
         <div class="card" ng-repeat="conference in conferencesList | filter:conferenceFilter">
           <img class="cover" width="150" heigth="150" src="/images/covers/{{conference.twitter}}.jpg">
           <h2>{{conference.name}}</h2>
-          <p><a href="{{conference.website}}">website</a> | <a href="http://twitter.com/{{conference.twitter}}">@{{conference.twitter}}</a></p>
+          <p><a target="_blank" href="{{conference.website}}">website</a> | <a href="http://twitter.com/{{conference.twitter}}">@{{conference.twitter}}</a></p>
           <p>{{conference.resume}}</p>
 
         </div>

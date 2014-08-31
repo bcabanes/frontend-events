@@ -1,5 +1,61 @@
 [
   {
+    "name": "CascadiaJS",
+    "resume": "CascadiaJS is a two-day, community-driven conference on the cutting edge of JavaScript. Browser, server, OS – we cover it all.",
+    "website": "http://cascadiajs.com",
+    "twitter": "cascadiajs",
+    "localisation": "North American"
+  },
+  {
+    "name": "ng-conf",
+    "resume": "The first CSS conference for Web designers and developers returns on October 13-15, 2014 in the fascinating city of New Orleans, USA.",
+    "website": "http://www.ng-conf.org/",
+    "twitter": "ngconf",
+    "localisation": "North American"
+  },
+  {
+    "name": "CSS Dev Conf",
+    "resume": "The first CSS conference for Web designers and developers returns on October 13-15, 2014 in the fascinating city of New Orleans, USA.",
+    "website": "http://cssdevconf.com",
+    "twitter": "cssdevconf",
+    "localisation": "North American"
+  },
+  {
+    "name": "HTML5DevConf",
+    "resume": "Join the largest JavaScript and HTML5 Developer Conference in the world. Leading edge speakers at a developer friendly price.",
+    "website": "http://html5devconf.com/",
+    "twitter": "html5devconf",
+    "localisation": "North American"
+  },
+  {
+    "name": "Forward JS",
+    "resume": "San Francisco rally on February 4, 2015 featuring some of the most forward looking technologies on the web. Minds will be blown.",
+    "website": "http://forwardjs.com/",
+    "twitter": "forwardjs",
+    "localisation": "North American"
+  },
+  {
+    "name": "Edge Conf",
+    "resume": "A day of group discussion and debate on advanced web technologies for developers and browser vendors, raising funds for Hack the Hood.",
+    "website": "https://edgeconf.com/",
+    "twitter": "edgeconf",
+    "localisation": "North American"
+  },
+  {
+    "name": "Nodevember",
+    "resume": "We're a Node and Javascript conference located in Nashville, TN happening November 15th and 16th.",
+    "website": "http://nodevember.org/",
+    "twitter": "nodevember",
+    "localisation": "North American"
+  },
+  {
+    "name": "MidwestJS",
+    "resume": "Midwest JS is a premier technology conference focused on the JavaScript ecosystem. The conference will be held for the first time in downtown Minneapolis at the University of St. Thomas.",
+    "website": "http://midwestjs.com/",
+    "twitter": "midwest_js",
+    "localisation": "North American"
+  },
+  {
     "name": "JSConf",
     "resume": "JSConf is a unique conference organization, because we aren't really a conference organization at all. We are a very loose federation of developers who share the same general idea about how a technical conference should be held.",
     "website": "http://jsconf.com/",
@@ -7,8 +63,15 @@
     "localisation": "North American"
   },
   {
+    "name": "oakland.js",
+    "resume": "A weekly free + public hangout for JavaScript enthusiasts that happens in Oakland, California. No presentations, RSVPs or startup pitches/overt recruiting allowed, just show up and talk, learn and hack!",
+    "website": "http://oaklandjs.com/",
+    "twitter": "oaklandjs",
+    "localisation": "North American"
+  },
+  {
     "name": "jQuery Conference",
-    "resume": " We're making our first trip to Chicago to bring together experts from across the field of front-end development to bring you up to speed on the latest open web technologies. Get the latest on jQuery and related projects, code architecture and organization, design and implementation practices, tooling and workflow improvements, and emerging browser technologies.",
+    "resume": "We're making our first trip to Chicago to bring together experts from across the field of front-end development to bring you up to speed on the latest open web technologies. Get the latest on jQuery and related projects, code architecture and organization, design and implementation practices, tooling and workflow improvements, and emerging browser technologies.",
     "website": "http://events.jquery.org/2014/chicago/",
     "twitter": "jqcon",
     "localisation": "North American"
@@ -37,8 +100,22 @@
   {
     "name": "nodeconf",
     "resume": "NodeConf!",
-    "website": "nodeconf.com",
+    "website": "http://nodeconf.com",
     "twitter": "nodeconf",
+    "localisation": "North American"
+  },
+  {
+    "name": "DjangoCon",
+    "resume": "Almost everyone who attends this conference develops Django, or uses Django to develop applications. Many do both. So this event is the place to meet and interact with Django developers.",
+    "website": "http://www.djangocon.us/",
+    "twitter": "djangocon",
+    "localisation": "North American"
+  },
+  {
+    "name": "EmberConf",
+    "resume": "For day and week-of updates on the first ever EmberConf, March 25-26 2014. See you there!",
+    "website": "http://emberconf.com/",
+    "twitter": "emberconf",
     "localisation": "North American"
   }
 ]
