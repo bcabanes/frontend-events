@@ -17,6 +17,6 @@
 
   };
 
-  angular.module('conferences.controllers', [])
+  angular.module('conferences.controllers')
     .controller('conferencesListController', ListController);
 })();

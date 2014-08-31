@@ -16,6 +16,6 @@
     return API;
   };
 
-  angular.module('conferences.factories', [])
+  angular.module('conferences.factories')
     .factory('conferencesAPI', ConferencesAPI);
 })();
