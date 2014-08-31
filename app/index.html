@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- endbuild -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,300italic' rel='stylesheet' type='text/css'>
-    
+
     <!-- build:js /js/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
@@ -27,19 +27,26 @@
 
     <header class="main-header"><!-- main-header -->
       <div class="header-container">
-        <h1>The best front-end conference list</h1>
+        <h1>
+          Front-list
+          <small>The best front-end conference list</small>
+        </h1>
       </div>
     </header><!-- end of main-header -->
 
     <!-- ng-app: This directive declares an element as application's root element -->
     <div class="app" ng-app="frontendConfs" ng-controller="conferencesListController as conferences">
-
       <div class="filter-container">
-        <input type="text" ng-model="conferenceFilter" placeholder="Search">
+        <div class="filter">
+          <input type="text" ng-model="conferenceFilter" placeholder="Search">
+        </div>
       </div>
-      <ul>
-        <li ng-repeat="conference in conferencesList | filter:searchFilter">{{conference.name}}</li>
-      </ul>
+
+      <div class="wrapper">
+        <div class="card" ng-repeat="conference in conferencesList | filter:searchFilter">
+          <h2>{{conference.name}}</h2>
+        </div>
+      </div>
 
     </div>
 

@@ -1,14 +1,8 @@
 /* ==========================================================================
-   Helpers
+   Filter
    ========================================================================== */
 
-*{
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.hide{
-  display: none;
-  visibility: hidden
+.filter-container{
+  margin: 15px auto;
+  width: 740px;
 }

@@ -1,0 +1,27 @@
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.main-header{
+  padding: 95px 16px 0 16px;
+  background: $primary-color;
+  height: 230px;
+  width: 100%;
+}
+  .header-container{
+    margin: 0 auto;
+    overflow: hidden;
+    width: 740px;
+
+    h1{
+      margin: 0.3em;
+      color: white;
+      font-size: 3em;
+      font-weight: normal;
+
+      small{
+        display: block;
+        font-size: 50%;
+      }
+    }
+  }

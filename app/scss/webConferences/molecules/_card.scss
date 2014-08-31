@@ -1,14 +1,13 @@
 /* ==========================================================================
-   Helpers
+   Card
    ========================================================================== */
 
-*{
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+.card{
+  display: inline-block;
+  width: 33%;
 
-.hide{
-  display: none;
-  visibility: hidden
+  h2{
+    color: $primary-color;
+    font-weight: normal;
+  }
 }
