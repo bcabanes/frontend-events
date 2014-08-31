@@ -1,23 +1,44 @@
 [
   {
-    "id": 1,
     "name": "JSConf",
+    "resume": "JSConf is a unique conference organization, because we aren't really a conference organization at all. We are a very loose federation of developers who share the same general idea about how a technical conference should be held.",
     "website": "http://jsconf.com/",
-    "twitter": "@jsconf",
+    "twitter": "jsconf",
     "localisation": "North American"
   },
   {
-    "id": 2,
     "name": "jQuery Conference",
+    "resume": " We're making our first trip to Chicago to bring together experts from across the field of front-end development to bring you up to speed on the latest open web technologies. Get the latest on jQuery and related projects, code architecture and organization, design and implementation practices, tooling and workflow improvements, and emerging browser technologies.",
     "website": "http://events.jquery.org/2014/chicago/",
-    "twitter": "@jqcon",
+    "twitter": "jqcon",
     "localisation": "North American"
   },
   {
-    "id": 3,
     "name": "Strange Loop Conf",
+    "resume": "Strange Loop is a multi-disciplinary conference that aims to bring together the developers and thinkers building tomorrow's technology in fields such as emerging languages, alternative databases, concurrency, distributed systems, mobile development, and the web.",
     "website": "https://thestrangeloop.com/",
-    "twitter": "@jstrangeloop_stl",
+    "twitter": "strangeloop_stl",
+    "localisation": "North American"
+  },
+  {
+    "name": "O'Reilly Strata",
+    "resume": "Strata is more than a conference. It’s the essential training and information source for data science and big data—with industry news, reports, in-person and online events, and much more.",
+    "website": "http://strataconf.com/",
+    "twitter": "strataconf",
+    "localisation": "North American"
+  },
+  {
+    "name": "RealtimeConf",
+    "resume": "RealtimeConf assembled the diverse developers and doers pushing forward the bleeding edge of the web. The &yet team put our whole crazy/creative/risky hearts into it, hoping to inspire our community to help bring open communication to the Open Web.",
+    "website": "http://realtimeconf.com/",
+    "twitter": "realtimeconf",
+    "localisation": "North American"
+  },
+  {
+    "name": "nodeconf",
+    "resume": "NodeConf!",
+    "website": "nodeconf.com",
+    "twitter": "nodeconf",
     "localisation": "North American"
   }
 ]
