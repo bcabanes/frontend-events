@@ -38,13 +38,13 @@
 
     <!-- ng-app: This directive declares an element as application's root element -->
     <div class="app" ng-app="frontendConfs" ng-controller="conferencesListController as conferences">
-      <div class="filter-container">
-        <div class="filter">
-          <label for="search">Are you looking for something in particular? <input id="search" type="search" ng-model="conferenceFilter" placeholder="Search"> </label>
-        </div>
-      </div>
-
       <div class="wrapper">
+        <div class="filter-container">
+          <div class="filter">
+            <label for="search">Are you looking for something in particular? <input id="search" type="search" ng-model="conferenceFilter" placeholder="Search"> </label>
+          </div>
+        </div>
+
         <div class="card" ng-repeat="conference in conferencesList | filter:conferenceFilter">
           <img class="cover" width="150" heigth="150" src="/images/covers/{{conference.twitter}}.jpg">
           <h2>{{conference.name}}</h2>

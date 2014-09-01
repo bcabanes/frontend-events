@@ -12,8 +12,13 @@
   &:first-child{ border: none; }
 
   .cover{
-    margin: 5px 15px 5px 0;
-    float: left;
+    margin: 15px auto;
+    display: block;
+
+    @media (min-width: $breakpoint-medium){
+      margin: 5px 15px 5px 0;
+      float: left;
+    }
   }
 
   h2{

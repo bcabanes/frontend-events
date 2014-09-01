@@ -3,21 +3,31 @@
    ========================================================================== */
 
 .main-header{
-  padding: 95px 16px 0 16px;
+  padding: 95px 0 0 0;
   background: $primary-color;
   height: 230px;
   width: 100%;
+
 }
   .header-container{
-    margin: 0 auto;
+    margin: 0 5%;
     overflow: hidden;
-    width: 740px;
+    width: 90%;
+
+    @media (min-width: $breakpoint-medium){
+      margin: 0 auto;
+      width: 740px;
+    }
 
     h1{
-      margin: 0.3em;
+      margin: 0.3em 0;
       color: white;
       font-size: 3em;
       font-weight: normal;
+
+      @media (min-width: $breakpoint-medium){
+        margin: 0.3em;
+      }
 
       small{
         display: block;

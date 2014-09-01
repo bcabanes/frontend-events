@@ -3,6 +3,11 @@
    ========================================================================== */
 
 .wrapper{
-  margin: 15px auto;
-  width: 740px;
+  margin: 15px 5%;
+  width: 90%;
+
+  @media (min-width: $breakpoint-medium){
+    margin: 15px auto;
+    width: 740px;
+  }
 }
