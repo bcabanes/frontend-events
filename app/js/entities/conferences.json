@@ -1,5 +1,19 @@
 [
   {
+    "name": "EmpireJS",
+    "resume": "We are back again! Bringing you speakers on cutting edge of Javascript: in the Browser, on the Server, with robots and hardware, and in ways we don’t even know yet!",
+    "website": "http://empirejs.org/",
+    "twitter": "empirejs",
+    "localisation": "North American"
+  },
+  {
+    "name": "RubyConf",
+    "resume": "RubyConf is visiting sunny San Diego this year from November 17-19, 2014, where we'll be celebrating all things Ruby while enjoying warm breezes off the Pacific Ocean.",
+    "website": "http://rubyconf.org/",
+    "twitter": "rubyconf",
+    "localisation": "North American"
+  },
+  {
     "name": "CascadiaJS",
     "resume": "CascadiaJS is a two-day, community-driven conference on the cutting edge of JavaScript. Browser, server, OS – we cover it all.",
     "website": "http://cascadiajs.com",
