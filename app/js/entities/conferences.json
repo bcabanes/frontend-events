@@ -1,5 +1,26 @@
 [
   {
+    "name": "QueensJS",
+    "resume": "Queens, New York's premier JavaScript Meetup! Sister Meetup.",
+    "website": "http://www.meetup.com/QueensJS/",
+    "twitter": "queens_js",
+    "localisation": "North American"
+  },
+  {
+    "name": "BrooklynJS",
+    "resume": "The world's most popular programming language, in New York's most popular borough.",
+    "website": "http://brooklynjs.com/",
+    "twitter": "brooklyn_js",
+    "localisation": "North American"
+  },
+  {
+    "name": "manhattan.js",
+    "resume": "We're a combination of Ruby, Javascript and CSS [yes CSS] developers and we aim to bring the greatest programming minds to Manhattan once a month to chat, teach and learn from.",
+    "website": "http://manhattanjs.com/",
+    "twitter": "manhattan_js",
+    "localisation": "North American"
+  },
+  {
     "name": "EmpireJS",
     "resume": "We are back again! Bringing you speakers on cutting edge of Javascript: in the Browser, on the Server, with robots and hardware, and in ways we don’t even know yet!",
     "website": "http://empirejs.org/",
