@@ -231,7 +231,7 @@ module.exports = function (grunt) {
           src: [
             '*.{ico,png,txt}',
             '.htaccess',
-            'images/**/*.{ico,png,txt,webp}',
+          'images/{,*/}*.{ico,jpg,png,txt,webp}',
             '{,*/}*.html',
             '*.html',
             // 'js/{,*/}*.*', // No need, all Angular app will be wrapped in app.js
