@@ -3,7 +3,7 @@
 
 (function(){
 
-  var ListController = function($scope, conferencesAPI){
+  var ListController = ['$scope', 'conferencesAPI', function($scope, conferencesAPI){
     $scope.conferenceFilter = null;
     $scope.searchFilter = null;
     $scope.conferencesList = [];
@@ -15,7 +15,7 @@
       $scope.conferencesList = data;
     });
 
-  };
+  }];
 
   angular.module('conferences.controllers')
     .controller('conferencesListController', ListController);

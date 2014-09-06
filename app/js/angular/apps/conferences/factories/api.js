@@ -3,7 +3,7 @@
 
 (function(){
 
-  var ConferencesAPI = function($http){
+  var ConferencesAPI = ['$http', function($http){
     var API = {
       getConferences: function(){
         return $http({
@@ -14,7 +14,7 @@
     };
 
     return API;
-  };
+  }];
 
   angular.module('conferences.factories')
     .factory('conferencesAPI', ConferencesAPI);
