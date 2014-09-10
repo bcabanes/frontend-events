@@ -31,8 +31,9 @@
  * don’t intend to replicate. This is where we can combine multiple quarks and atoms, without
  * interfering with any of our global styles.
  */
-@import "molecules/_filter";
 @import "molecules/_card";
+@import "molecules/_filter";
+@import "molecules/_plot";
 
 /** Organisms
 ========================================================================== */

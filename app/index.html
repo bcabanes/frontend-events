@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Front-end events</title>
-    <meta name="description" content="The best front-end conference list.">
+    <meta name="description" content="The best front-end conferences list. Frontend events is a list of events in the front-end environment crowdsourced.">
+    <meta name="keyword" content="frontend, meetup, conference, event, nodejs, angularjs, javascript, backbonejs, emberjs, sass">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta id="viewport" name="viewport" content ="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
@@ -33,12 +34,18 @@
           Front-end events
           <small>The best front-end conference list</small>
         </h1>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="bencabanes">Tweet</a>
       </div>
     </header><!-- end of main-header -->
 
     <!-- ng-app: This directive declares an element as application's root element -->
     <div class="app" ng-app="frontendConfs" ng-controller="conferencesListController as conferences">
       <div class="wrapper">
+        <div class="plot-container">
+          <div class="plot">
+            <p>Front-end events is a list of conferences on front-end technologies.</p>
+          </div>
+        </div>
         <div class="filter-container">
           <div class="filter">
             <label for="search">Are you looking for something in particular? <input id="search" type="search" ng-model="conferenceFilter" placeholder="Search"> </label>
@@ -72,6 +79,8 @@
       <script src="/js/angular/apps/conferences/factories/factories.js"></script>
         <script src="/js/angular/apps/conferences/factories/api.js"></script>
     <!-- endbuild -->
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 </body>
 </html>

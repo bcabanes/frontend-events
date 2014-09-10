@@ -5,7 +5,7 @@
 .main-header{
   padding: 95px 0 0 0;
   background: $primary-color;
-  height: 230px;
+  height: auto;
   width: 100%;
 
 }
@@ -20,13 +20,13 @@
     }
 
     h1{
-      margin: 0.3em 0;
+      margin: 0.3em;
       color: white;
       font-size: 3em;
       font-weight: normal;
 
       @media (min-width: $breakpoint-medium){
-        margin: 0.3em;
+        margin: 0.3em 0;
       }
 
       small{
