@@ -17,7 +17,8 @@
   font-size: 1em;
   transition: all 250ms ease-out;
 
-  &:hover{
+  &:hover,
+  &:visited:hover{
     background: $white;
     color: $text-color;
   }
@@ -25,7 +26,12 @@
 }
 
 .tagline-container{
-  margin: 150px auto;
+  padding: 1.5em 0;
   text-align: center;
   width: 95%;
+
+  @media (min-width: $breakpoint-medium){
+    margin: 150px auto;
+    padding: 0;
+  }
 }

@@ -15,5 +15,11 @@
 }
 
 .primary-menu-container{
+  text-align: center;
+  width: 100%;
 
+  @media (min-width: $breakpoint-medium){
+    text-align: left;
+    width: auto;
+  }
 }
