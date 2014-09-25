@@ -17,4 +17,9 @@
     margin: 0 5%;
     overflow: hidden;
     width: 90%;
+    
+    @media (min-width: $breakpoint-medium){
+      margin: 0 auto;
+      width: 740px;
+    }
   }

@@ -9,7 +9,7 @@ $white         : #FFFFFF;
 $black         : #333333;
 $primary-color : #00BCD4;
 $text-color    : #212121;
-$link-color    : #0277BB;
+$link-color    : darken($text-color, 20%);
 $topbar-color  : #FFFFFF;
 
 /**
