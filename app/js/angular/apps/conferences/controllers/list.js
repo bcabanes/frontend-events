@@ -7,12 +7,14 @@
     $scope.conferenceFilter = null;
     $scope.searchFilter = null;
     $scope.conferencesList = [];
+    $scope.nbConferences = 0;
 
     /**
      * Load data from API
      */
     conferencesAPI.getConferences().success(function(data){
       $scope.conferencesList = data;
+      $scope.nbConferences = data.length;
     });
 
   }];

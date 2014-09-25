@@ -50,19 +50,22 @@
     <!-- ng-app: This directive declares an element as application's root element -->
     <section class="app" ng-app="frontendConfs" ng-controller="conferencesListController as conferences">
       <div class="wrapper">
-        <article class="plot-container">
+        <article id="about" class="plot-container">
           <div class="plot">
             <h1>Our goal is simple</h1>
-            <p>Frontendevents.com has just one goal, list all active conferences/meetups dedicated on the front-end development.</p>
+            <p>Frontendevents.com has just one goal, list all active conferences/meetups dedicated on the front-end development. Make a list is long and pretty hard so feel free to contribute.</p>
+            <p>If you want to contribute to the project by adding a conference/meetup not yet listed you can submit it via <a href="https://github.com/bcabanes/frontend-events/issues">our github</a> and post an issue with the event's infos.</p>
           </div>
         </article>
         <div class="filter-container">
           <div class="filter">
+            <h2>Search for an event?</h2>
             <label for="search">Are you looking for something in particular? <input id="search" type="search" ng-model="conferenceFilter" placeholder="Search"> </label>
           </div>
         </div>
 
         <div id="list" class="card-list">
+          <h2>{{nbConferences}} events:</h2>
           <div class="card" ng-repeat="conference in conferencesList | filter:conferenceFilter">
             <img class="cover" width="150" heigth="150" src="/images/covers/{{conference.twitter}}.jpg">
             <h2>{{conference.name}}</h2>

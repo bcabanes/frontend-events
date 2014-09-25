@@ -1,4 +1,4 @@
-/* globale angular */
+/* global angular */
 
 /**
  * Change the default token makers for AngularJS
