@@ -90,7 +90,7 @@
 
     gulp.watch(['app/**/*.html'], reload);
     gulp.watch(['app/assets/styles/scss/**/*.{scss, sass}'], ['styles', reload]);
-    gulp.watch(['app/assets/scripts/js/**/*.js'], ['jshint']);
+    gulp.watch(['app/assets/scripts/js/{,**/}/*.js'], ['jshint']);
     gulp.watch(['app/assets/images/**/*'], reload);
   });
 

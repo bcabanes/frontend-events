@@ -18,6 +18,6 @@
     /**
      * Feature areas
      */
-    'app.helloworld'
+    'app.layout'
   ]);
 })(angular);

@@ -13,9 +13,9 @@
   }
 
   var config = {
-    appErrorPrefix: '[NG-Modular Error] ', //Configure the exceptionHandler decorator
-    appTitle: 'Angular Modular Demo',
-    version: '1.0.0'
+    appErrorPrefix: '[FrontendEvents Error] ', //Configure the exceptionHandler decorator
+    appTitle: 'Frontend Events',
+    version: '0.0.1'
   };
 
   core.value('config', config);

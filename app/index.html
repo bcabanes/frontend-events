@@ -7,7 +7,7 @@
             width=device-width, height=device-height, minimal-ui,
             initial-scale=1">
 
-        <title>Domain</title>
+        <title data-ng-bind="title">Domain</title>
         <meta name="description" content="">
 
         <link rel="shortcut icon" href="/favicon.ico">
@@ -22,7 +22,9 @@
     </head>
     <body>
 
-        <div data-ng-view></div>
+        <div data-ng-include="'/assets/partials/layout/header.html'"></div>
+        <div data-ng-include="'/assets/partials/layout/main.html'"></div>
+        <div data-ng-include="'/assets/partials/layout/footer.html'"></div>
 
 
         <!-- build:js assets/scripts/vendors.min.js -->
@@ -56,9 +58,9 @@
         <script src="/assets/scripts/js/modules/core/config.js"></script>
 
         <!-- events module -->
-        <script src="/assets/scripts/js/modules/helloworld/helloworld.module.js"></script>
-        <script src="/assets/scripts/js/modules/helloworld/config.route.js"></script>
-        <script src="/assets/scripts/js/modules/helloworld/helloworld.js"></script>
+        <script src="/assets/scripts/js/modules/layout/layout.module.js"></script>
+        <script src="/assets/scripts/js/modules/layout/header.js"></script>
+        <script src="/assets/scripts/js/modules/layout/main.js"></script>
         <!-- endbuild -->
     </body>
 </html>
