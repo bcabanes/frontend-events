@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="user-scalable=no,
+            width=device-width, height=device-height, minimal-ui,
+            initial-scale=1">
+
+        <title>Domain</title>
+        <meta name="description" content="">
+
+        <link rel="shortcut icon" href="/favicon.ico">
+
+        <!-- build:css assets/styles/vendors.min.css -->
+        <link rel="stylesheet" href="/bower_components/toastr/toastr.css">
+        <!-- endbuild -->
+
+        <!-- build:css assets/styles/app.min.css -->
+        <link rel="stylesheet" href="/assets/styles/css/app.css">
+        <!-- endbuild -->
+    </head>
+    <body>
+
+        <div data-ng-view></div>
+
+
+        <!-- build:js assets/scripts/vendors.min.js -->
+        <script src="/bower_components/jquery/dist/jquery.js"></script>
+        <script src="/bower_components/angular/angular.js"></script>
+        <script src="/bower_components/angular-route/angular-route.js"></script>
+        <script src="/bower_components/angular-sanitize/angular-sanitize.js"></script>
+        <script src="/bower_components/toastr/toastr.js"></script>
+
+        <!-- endbuild -->
+
+        <!-- build:js assets/scripts/app.min.js -->
+        <script src="/assets/scripts/js/app.js"></script>
+        <script src="/assets/scripts/js/bootstrap.js"></script>
+
+        <!-- blocks module -->
+          <!-- exception -->
+          <script src="/assets/scripts/js/modules/blocks/exception/exception.module.js"></script>
+          <script src="/assets/scripts/js/modules/blocks/exception/exception.js"></script>
+          <script src="/assets/scripts/js/modules/blocks/exception/exception-handler.provider.js"></script>
+          <!-- logger -->
+          <script src="/assets/scripts/js/modules/blocks/logger/logger.module.js"></script>
+          <script src="/assets/scripts/js/modules/blocks/logger/logger.js"></script>
+          <!-- router -->
+          <script src="/assets/scripts/js/modules/blocks/router/router.module.js"></script>
+          <script src="/assets/scripts/js/modules/blocks/router/routehelper.js"></script>
+
+        <!-- core module -->
+        <script src="/assets/scripts/js/modules/core/core.module.js"></script>
+        <script src="/assets/scripts/js/modules/core/constants.js"></script>
+        <script src="/assets/scripts/js/modules/core/config.js"></script>
+
+        <!-- events module -->
+        <script src="/assets/scripts/js/modules/helloworld/helloworld.module.js"></script>
+        <script src="/assets/scripts/js/modules/helloworld/config.route.js"></script>
+        <script src="/assets/scripts/js/modules/helloworld/helloworld.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>

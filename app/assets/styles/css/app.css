@@ -1,0 +1,173 @@
+/**
+ * Application Styles
+ */
+/* ==========================================================================
+   SASS & ATOMIC DESIGN
+   ========================================================================== */
+/**
+* This is the control panel where all of the atomic design elements are imported.
+*/
+/** Utilities
+========================================================================== */
+/**
+* Global classes, mixins and styles that can be used anywhere and at any time.
+*/
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+/**
+ * Font size
+ */
+/**
+ * Breakpoints
+ */
+/**
+ * Containers
+ */
+/** Colors
+========================================================================== */
+/**
+ * Palette
+ */
+/**
+ * Base
+ */
+/* ==========================================================================
+   Custom font import
+   ========================================================================== */
+/* ==========================================================================
+   Functions
+   ========================================================================== */
+/**
+ * STRIP UNIT
+ * It strips the unit of measure and returns it
+ */
+/**
+ * [value description]
+ */
+/**
+ *  REM CALC
+ *  New Syntax, allows to optionally calculate on a different base value to counter compounding effect of rem's.
+ *  Call with 1, 2, 3 or 4 parameters, 'px' is not required but supported:
+ *    rem-calc(10 20 30px 40);
+ *
+ *  Space delimited, if you want to delimit using comma's, wrap it in another pair of brackets
+ *    rem-calc((10, 20, 30, 40px));
+ *
+ *  Optionally call with a different base (eg: 8px) to calculate rem.
+ *    rem-calc(16px 32px 48px, 8px);
+ *
+ *  If you require to comma separate your list
+ *    rem-calc((16px, 32px, 48), 8px);
+ */
+/* ==========================================================================
+   Mixins
+   ========================================================================== */
+/**
+ * Align horizontaly and verticaly something
+ */
+/**
+ * Turn the element into a circle with a border
+ */
+/**
+ * We use this to do clear floats
+ */
+/**
+ * We use this to create isosceles triangles
+ * $triangle-size - Used to set border-size. No default, set a px or em size.
+ * $triangle-color - Used to set border-color which makes up triangle. No default
+ * $triangle-direction - Used to determine which direction triangle points. Options: top, bottom, left, right
+ */
+/**
+ * We use this to create the icon with three lines aka the hamburger icon, the menu-icon or the navicon
+ * $width - Width of hamburger icon in rem
+ * $top - If false, icon will be centered vertically || explicitly set value in rem
+ * $thickness - thickness of lines in hamburger icon, set value in px
+ * $gap - spacing between the lines in hamburger icon, set value in px
+ * $color - icon color
+ * $hover-color - icon color during hover
+ * $offcanvas - Set to true of @include in offcanvas
+ */
+/* ==========================================================================
+   Grids
+   ========================================================================== */
+/**
+ * @variables
+ */
+/**
+ *  Padding inside the width
+ *  Apply a natural box layout model to all elements,
+ *  but allowing components to change
+ */
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/**
+ * Grid Functions
+ */
+/**
+ * @FUNCTION
+ * $colNumber - Found in settings file
+ * $totalColumns - Found in settings file
+ */
+/**
+ * @mixins
+ * For creating container, nested, and collapsed rows.
+ * $behavior - Any special behavior for this row? Default: false. Options: nest, collapse, nest-collapse, false.
+ */
+/**
+ * Creates a column, should be used inside of a media query to control layouts
+ * $columns - The number of columns this should be
+ * $last-column - Is this the last column? Default: false.
+ * $center - Center these columns? Default: false.
+ * $offset - # of columns to offset. Default: false.
+ * $push - # of columns to push. Default: false.
+ * $pull - # of columns to pull. Default: false.
+ * $collapse - Get rid of gutter padding on column? Default: false.
+ * $float - Should this float? Default: true. Options: true, false, left, right.
+ */
+/* ==========================================================================
+   Custom animations import
+   ========================================================================== */
+/** Quarks
+========================================================================== */
+/*
+* Styles reserved for default HTML elements only. Default paragraphs, links, lists and micros. Style
+* guide stuff.
+*/
+/** Atoms
+========================================================================== */
+/*
+* CSS objects that can be extended from and into other elements of the site. Think of these as
+* the default relationships that can be used again and again without bloating the codebase.
+*/
+/** Molecules
+========================================================================== */
+/*
+* Sometimes we need one-off structures, such as a banner or navigation element or footer, that we
+* don’t intend to replicate. This is where we can combine multiple quarks and atoms, without
+* interfering with any of our global styles.
+*/
+/** Organisms
+========================================================================== */
+/*
+* Organisms are made of many molecules combined together. This is a bigger part of design than molecules,
+* they possibly constitue the main goal of a template. The CSS rules here, has to be organism centric and
+* specific.
+*/
+/** Templates
+========================================================================== */
+/*
+* Templates are made of one or a multiple of organisms. Sometime you need to adjust one or many CSS rules
+* to finish the mockup or wireframe of the page. The CSS rules has to be verry light and must be out of
+* anyone organism scope.
+*/
+/** Pages
+========================================================================== */
+/*
+* Pages are the results of the Atomic Design process. This is the end process step and the CSS rules
+* MUST be out of the templates scope.
+*/
