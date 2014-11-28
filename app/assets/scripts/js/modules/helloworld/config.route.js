@@ -5,7 +5,7 @@
   var getRoutes = function(){
     return [
       {
-        url: '/',
+        url: '/helloworld',
         config: {
           templateUrl: '/assets/partials/helloworld/helloworld.html',
           controller: 'Helloworld',
