@@ -19,11 +19,7 @@
                 templateUrl: '/assets/partials/home/home.html',
                 controller: 'Home',
                 controllerAs: 'vm',
-                title: 'Home',
-                settings: {
-                    nav: 1,
-                    content: '<i class="fa fa-cloud"></i> Home'
-                }
+                title: 'Home'
             }
         }
         ];

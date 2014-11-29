@@ -1,3 +1,20 @@
-<div data-ng-controller="Header as vm">
-    {{vm.customSetting}}
-</div>
+<header class="main-header" data-ng-controller="Header as vm"><!-- main-header -->
+    <div class="header-container">
+        <div class="topbar"><!-- topbar -->
+            <h1 class="site-logo light"><a href="/">Frontendevents.com</a></h1>
+
+            <div class="primary-menu-container">
+                <ul class="primary-menu">
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#list">the list</a></li>
+                </ul>
+            </div>
+        </div><!-- end of topbar -->
+
+        <div class="tagline-container">
+            <h2 class="tagline">The simple way to get there, is to know they exists.</h2>
+            <a href="#list" class="tagline-action">view the list</a>
+        </div>
+
+    </div>
+</header>

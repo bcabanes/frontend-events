@@ -1,7 +1,19 @@
-<h2>Home view</h2>
-<p>Total of {{vm.eventsCount}}</p>
-<ul>
-    <li ng-repeat="event in vm.events">
-        {{event.name}}
-    </li>
-</ul>
+<div class="wrapper">
+    <article id="about" class="plot-container">
+        <div class="plot">
+            <h1>Our goal is simple</h1>
+            <p>Frontendevents.com has just one goal, list all active conferences/meetups dedicated on the front-end development. Make a list is long and pretty hard so feel free to contribute.</p>
+            <p>If you want to contribute to the project by adding a conference/meetup not yet listed you can submit it via <a href="https://github.com/bcabanes/frontend-events/issues">our github</a> and post an issue with the event's infos.</p>
+            <h2>There are currently {{vm.eventsCount}} events</h2>
+        </div>
+    </article>
+
+    <div id="list" class="card-list">
+        <div class="card" ng-repeat="event in filtred = (vm.events | filter:eventFilter)">
+            <img class="cover" width="150" heigth="150" src="/images/covers/{{conference.twitter}}.jpg">
+            <h2>{{event.name}}</h2>
+            <p><a target="_blank" href="{{event.website}}">website</a> | <a target="_blank" href="http://twitter.com/{{event.twitter}}">@{{event.twitter}}</a></p>
+            <p>{{event.resume}}</p>
+        </div>
+    </div>
+</div>

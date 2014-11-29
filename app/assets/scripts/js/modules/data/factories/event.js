@@ -19,10 +19,10 @@
 
         function getEvents() {
             return $http.get('/assets/mockdata/conferences.json')
-            .then(getEventsComplete)
-            .catch(function(message){
-                exception.catcher('XHR Failed for getEvents')(message);
-            });
+                .then(getEventsComplete)
+                .catch(function(message){
+                    exception.catcher('XHR Failed for getEvents')(message);
+                });
 
             function getEventsComplete(data, status, header, config) {
                 return data.data;
